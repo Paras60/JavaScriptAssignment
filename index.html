@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Website Title & Description for Search Engine purposes -->
+		<title>D3</title>
+		<meta name="description" content="">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="//d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+
+		<!-- Custom CSS -->
+		<!--<link href="css/styles.css" rel="stylesheet">-->
+		<link rel="stylesheet" type="text/css" href="css/firstStyle.css">
+
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1 style="text-align:center">India Census 2011</h1>
+	<div class="container-fluid" >
+            <ul class="nav nav-tabs" >
+                <li class="active"><a href="#tab1" data-toggle="tab" onclick>Graph 1</a></li>
+                <li ><a href="#tab2" data-toggle="tab">Graph 2</a></li>
+                <li ><a href="#tab3" data-toggle="tab">Graph 3</a></li>
+            </ul>
+            <div class="tab-content" style="padding-top:50px;">
+            	<div id="tab1" class="tab-pane fade in active">
+                	<acontent>
+						<h2 style="text-align:center">Male/Female ratio by clubbing all states to show the Illiterate and Literate population of India</h2>
+					   	<script src="js/first.js"></script>
+	               	</acontent>
+                </div>
+                <div id="tab2" class="tab-pane">
+                    <bcontent>
+                    	<h2 style="text-align:center">7 North-Eastern states' literate and Illiterate Male/Female Ratio</h2>
+					   	<script src="js/SevenStates.js"></script>
+                    </bcontent>
+              	</div>
+                <div class="tab-pane" id="tab3">
+                	<ccontent>
+                		<h2 style="text-align:center">State-wise comparison literate and Illiterate population. </h2>
+                			<script src="js/Third.js"></script>
+					</ccontent>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- All Javascript at the bottom of the page for faster page loading -->
+		
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+	
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
